@@ -1,6 +1,6 @@
 # 📚 Bookstore Web App
 
-A full-stack **Bookstore application** built with **React (Vite), Tailwind CSS, Firebase, and Cloudinary**.  
+A full-stack **Bookstore application** built with **React, Tailwind CSS, Firebase, and Cloudinary**.  
 This project allows users to **sign up, log in (Email/Google), add books with images, view a responsive grid of books, and download book covers**.
 
 🔗 **Live Demo**: [Bookstore App](https://bookstoreshriharshnandigamwar.netlify.app)
