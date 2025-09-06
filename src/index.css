@@ -1,6 +1,9 @@
+/* Tailwind import   */
 @import "tailwindcss";
 
-body{
+/* Body css   */
+body {
   background-color: #1a1a1a;
   color: #ffffff;
+  overflow-x: hidden;
 }
