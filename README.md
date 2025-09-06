@@ -29,7 +29,6 @@ This project allows users to **sign up, log in (Email/Google), add books with im
 - 🎨 **Modern UI/UX**
   - Built with **Tailwind CSS**
   - Fully responsive (mobile → desktop)
-  - Dark card style for books
 
 ---
 
