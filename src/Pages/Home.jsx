@@ -80,7 +80,7 @@ export default function Home() {
                   Category: {book.category}
                 </p>
                 {/* book price   */}
-                <p className="mt-2 text-blue-600 font-bold">₹{book.price}</p>
+                {/* <p className="mt-2 text-blue-600 font-bold">₹{book.price}</p> */}
               </div>
               {/* Book Download button   */}
               <div className="p-4 pt-0">

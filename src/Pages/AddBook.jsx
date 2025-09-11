@@ -14,7 +14,7 @@ import LoadingButton from "../Components/LoadingButton.jsx";
 
 export default function AddBook() {
   const [title, setTitle] = useState("");
-  const [price, setPrice] = useState("");
+  // const [price, setPrice] = useState("");
   const [author, setAuthor] = useState("");
   const [category, setCategory] = useState("");
   const [file, setFile] = useState(null);
@@ -28,7 +28,7 @@ export default function AddBook() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // If any fild is not fill by user the show alert.
-    if (!title || !price || !author || !category || !file) {
+    if (!title || !author || !category || !file) {
       alert("Please fill all fields");
       return;
     }
@@ -48,19 +48,24 @@ export default function AddBook() {
       );
       const data = await res.json();
       const imageUrl = data.secure_url;
+
       // Add book to Firestore
       await addDoc(collection(db, "books"), {
         title,
-        price: Number(price),
+        // price: Number(price),
         author,
         category,
         imageUrl,
         createdAt: serverTimestamp(),
       });
+
+
       toast.success("Book added successfully!", { autoClose: 2000 });
+
+
       // Reset form
       setTitle("");
-      setPrice("");
+      // setPrice("");
       setAuthor("");
       setCategory("");
       setFile(null);
@@ -89,13 +94,13 @@ export default function AddBook() {
             onChange={(e) => setTitle(e.target.value)}
           />
           {/* Book Price   */}
-          <input
+          {/* <input
             type="number"
             placeholder="Price"
             className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 text-black"
             value={price}
             onChange={(e) => setPrice(e.target.value)}
-          />
+          /> */}
           {/* Book Author   */}
           <input
             type="text"
@@ -131,3 +136,17 @@ export default function AddBook() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
